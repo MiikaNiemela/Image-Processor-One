@@ -1,8 +1,15 @@
 
-# Image content processor one 
+# Image content identification test one 
 
-A copy of code from [Medium](https://medium.com/@dimosdennis/personal-photo-library-with-langchain-ollama-llava-fully-local-e82edfe07f54) article by Dimos Dennis
-AI Summary of the solution:
+The project starts as copy of Dimos Dennis's [Medium](https://medium.com/@dimosdennis/personal-photo-library-with-langchain-ollama-llava-fully-local-e82edfe07f54) article.
+
+The article describes a solution, that can process a good lized library of images. It will extract and store metadata, generate a textual description of the picture and detecting objects using AI models. The models are run on locally on Ollama.
+
+The solution, and the Ollama hosted models, should run without problems on a mid-range gaming PC. Definition of _mid-range = Ryzen 5 5600X, 64GB RAM, RTX 4060 Ti 16GB_. 
+
+The outcome is to get a descriptive catalog of one's digital photo archive. And to have fun while doing it. 
+
+## AI Summary of the solution:
 
 1. **Initialization**:
    - The code initializes required packages: `langchain`, `langchain-chroma`, `langchain-ollama`, `pillow`, and `colorama`.
@@ -28,6 +35,5 @@ AI Summary of the solution:
       VISION_MODEL=llava:13b
       EMBEDDING_MODEL=mxbai-embed-large
    ```
-   
-Overall, the code aims to process a large number of photos by extracting and storing metadata, generating descriptions, and detecting objects using AI models. It runs locally on a mid-range gaming PC with appropriate hardware to handle the workload efficiently.
-_(mid-range = Ryzen 5 5600X, 64GB RAM, RTX 4060 Ti 16GB)_
+
+Start program with `python analyzer`.
